@@ -28,7 +28,7 @@
   "dependencies": {
     "eslint-config-airbnb": "^11.2.0"
   },
-  "devDependencies": {
+  "peerDependencies": {
     "eslint": "^3.5.0",
     "eslint-import-resolver-node": "^0.2.3",
     "eslint-plugin-coursera": "0.0.2",
@@ -37,5 +37,6 @@
     "eslint-plugin-import": "^1.15.0",
     "eslint-plugin-jsx-a11y": "^2.2.2",
     "eslint-plugin-react": "^6.2.1"
+
   }
 }

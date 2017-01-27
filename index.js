@@ -6,7 +6,8 @@ module.exports = {
     browser: true,
     node: true,
     mocha: true,
-    amd: true
+    amd: true,
+    jest: true
   },
   plugins: [
     'react',

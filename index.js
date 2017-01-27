@@ -64,7 +64,7 @@ module.exports = {
     eqeqeq: 1,
     'flowtype/define-flow-type': 1,
     'func-names': 0,
-    'global-require': 1,
+    'global-require': 0,
     'guard-for-in': 1,
     'id-length': 0,
     // TODO: Consider enabling these import rules

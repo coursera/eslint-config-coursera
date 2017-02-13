@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-coursera",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Coursera's approach to JavaScript",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -35,7 +35,7 @@
     "babel-eslint": "^6.0.2",
     "eslint": "^3.5.0",
     "eslint-import-resolver-node": "^0.2.3",
-    "eslint-plugin-coursera": "0.0.2",
+    "eslint-plugin-coursera": "0.0.3",
     "eslint-plugin-flowtype": "^2.25.0",
     "eslint-plugin-graphql": "^0.2.7",
     "eslint-plugin-import": "^1.15.0",

@@ -12,7 +12,8 @@ module.exports = {
   plugins: [
     'react',
     'jsx-a11y',
-    'flowtype'
+    'flowtype',
+    'coursera'
   ],
   globals: {
     environment: true
@@ -46,6 +47,7 @@ module.exports = {
       'never'
     ],
     'consistent-return': 1,
+    'coursera/no-translated-template-strings': 1,
     curly: [
       1,
       'multi-line'

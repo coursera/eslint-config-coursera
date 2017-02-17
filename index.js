@@ -149,6 +149,7 @@ module.exports = {
     'padded-blocks': 0,
     'prefer-arrow-callback': 0,
     'prefer-const': 2,
+    'prefer-default-export': 0,
     'prefer-template': 0,
     strict: 0,
     'object-curly-spacing': 0,

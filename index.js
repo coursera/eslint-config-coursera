@@ -70,6 +70,7 @@ module.exports = {
     'guard-for-in': 1,
     'id-length': 0,
     // TODO: Consider enabling these import rules
+    'import/extensions': 0,
     'import/no-unresolved': 0,
     'import/no-extraneous-dependencies': 0,
     indent: [

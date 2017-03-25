@@ -7,11 +7,11 @@ module.exports = {
     node: true,
     mocha: true,
     amd: true,
-    jest: true
+    jest: true,
   },
   plugins: ['react', 'jsx-a11y', 'flowtype', 'coursera', 'prettier'],
   globals: {
-    environment: true
+    environment: true,
   },
   ecmaFeatures: {
     globalReturn: false,
@@ -21,7 +21,7 @@ module.exports = {
     restParams: true,
     unicodeCodePointEscapes: false,
     experimentalObjectRestSpread: true,
-    jsx: true
+    jsx: true,
   },
   rules: {
     'accessor-pairs': 2,
@@ -29,7 +29,16 @@ module.exports = {
     // TODO: Consider if we want to enable this rule.
     'arrow-parens': 0,
     'class-methods-use-this': 0,
-    'comma-dangle': [0, 'always-multiline'],
+    'comma-dangle': [
+      0,
+      {
+        arrays: 'always-multiline',
+        objects: 'always-multiline',
+        imports: 'always-multiline',
+        exports: 'always-multiline',
+        functions: 'ignore',
+      },
+    ],
     complexity: 0,
     'computed-property-spacing': [2, 'never'],
     'consistent-return': 1,
@@ -39,8 +48,8 @@ module.exports = {
     'dot-notation': [
       1,
       {
-        allowKeywords: true
-      }
+        allowKeywords: true,
+      },
     ],
     'dot-location': [2, 'property'],
     eqeqeq: 1,
@@ -56,8 +65,8 @@ module.exports = {
       2,
       2,
       {
-        SwitchCase: 1
-      }
+        SwitchCase: 1,
+      },
     ],
     'jsx-a11y/aria-props': 1,
     'jsx-a11y/aria-proptypes': 1,
@@ -67,18 +76,25 @@ module.exports = {
     'jsx-a11y/role-supports-aria-props': 1,
     'jsx-a11y/tabindex-no-positive': 1,
     'linebreak-style': 2,
-    'max-len': [2, 120, 2],
+    'max-len': [
+      2,
+      {
+        code: 120,
+        tabWidth: 2,
+        ignoreStrings: true,
+      },
+    ],
     'new-cap': [
       1,
       {
-        capIsNewExceptions: ['Q', 'API', 'ZeroClipboard']
-      }
+        capIsNewExceptions: ['Q', 'API', 'ZeroClipboard'],
+      },
     ],
     'newline-per-chained-call': [
       2,
       {
-        ignoreChainWithDepth: 2
-      }
+        ignoreChainWithDepth: 2,
+      },
     ],
     'no-bitwise': 2,
     'no-continue': 2,
@@ -102,8 +118,8 @@ module.exports = {
     'no-unused-vars': [
       1,
       {
-        args: 'none'
-      }
+        args: 'none',
+      },
     ],
     'no-void': 2,
     'no-var': 2,
@@ -111,8 +127,8 @@ module.exports = {
       1,
       {
         terms: ['fixme', 'hack', 'xxx'],
-        location: 'start'
-      }
+        location: 'start',
+      },
     ],
     'padded-blocks': 0,
     'prefer-arrow-callback': 0,
@@ -122,21 +138,21 @@ module.exports = {
     strict: 0,
     'object-curly-spacing': 0,
     'operator-linebreak': [1, 'after'],
-    quotes: [0, 'single', 'avoid-escape'],
+    quotes: [1, 'single', 'avoid-escape'],
     'quote-props': [1, 'consistent'],
     'react/jsx-boolean-value': 0,
     'react/jsx-filename-extension': [
       1,
       {
-        extensions: ['.jsx', '.js']
-      }
+        extensions: ['.jsx', '.js'],
+      },
     ],
     'react/jsx-no-duplicate-props': 2,
     'react/jsx-no-bind': [
       2,
       {
-        allowArrowFunctions: true
-      }
+        allowArrowFunctions: true,
+      },
     ],
     'react/jsx-quotes': 0,
     'react/no-did-mount-set-state': 0,
@@ -146,8 +162,8 @@ module.exports = {
       1,
       {
         customValidators: [],
-        skipShapeProps: true
-      }
+        skipShapeProps: true,
+      },
     ],
     'react/prefer-es6-class': 1,
     'react/prefer-stateless-function': 0,
@@ -155,13 +171,7 @@ module.exports = {
     'react/sort-comp': [
       1,
       {
-        order: [
-          'type-annotations',
-          'static-methods',
-          'lifecycle',
-          'everything-else',
-          'render'
-        ],
+        order: ['type-annotations', 'static-methods', 'lifecycle', 'everything-else', 'render'],
         groups: {
           'static-methods': ['propTypes', 'contextTypes', 'childContextTypes'],
           lifecycle: [
@@ -190,13 +200,13 @@ module.exports = {
             '/^get.+$/',
             'everything-else',
             '/^render.+$/',
-            'render'
-          ]
-        }
-      }
+            'render',
+          ],
+        },
+      },
     ],
     'sort-vars': 1,
     'space-before-function-paren': [2, 'never'],
-    'vars-on-top': 0
-  }
+    'vars-on-top': 0,
+  },
 };

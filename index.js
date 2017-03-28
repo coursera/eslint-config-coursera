@@ -29,7 +29,16 @@ module.exports = {
     // TODO: Consider if we want to enable this rule.
     'arrow-parens': 0,
     'class-methods-use-this': 0,
-    'comma-dangle': [0, 'always-multiline'],
+    'comma-dangle': [
+      0,
+      {
+        arrays: 'always-multiline',
+        objects: 'always-multiline',
+        imports: 'always-multiline',
+        exports: 'always-multiline',
+        functions: 'ignore'
+      }
+    ],
     complexity: 0,
     'computed-property-spacing': [2, 'never'],
     'consistent-return': 1,
@@ -67,19 +76,21 @@ module.exports = {
     'jsx-a11y/role-supports-aria-props': 1,
     'jsx-a11y/tabindex-no-positive': 1,
     'linebreak-style': 2,
-    'max-len': [2, 120, 2],
+    'max-len': [
+      2,
+      {
+        code: 120,
+        tabWidth: 2,
+        ignoreStrings: true
+      }
+    ],
     'new-cap': [
       1,
       {
         capIsNewExceptions: ['Q', 'API', 'ZeroClipboard']
       }
     ],
-    'newline-per-chained-call': [
-      2,
-      {
-        ignoreChainWithDepth: 2
-      }
-    ],
+    'newline-per-chained-call': 0,
     'no-bitwise': 2,
     'no-continue': 2,
     'no-div-regex': 2,
@@ -122,7 +133,7 @@ module.exports = {
     strict: 0,
     'object-curly-spacing': 0,
     'operator-linebreak': [1, 'after'],
-    quotes: [0, 'single', 'avoid-escape'],
+    quotes: [1, 'single', 'avoid-escape'],
     'quote-props': [1, 'consistent'],
     'react/jsx-boolean-value': 0,
     'react/jsx-filename-extension': [

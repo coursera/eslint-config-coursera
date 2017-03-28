@@ -1,6 +1,6 @@
 module.exports = {
   root: true,
-  extends: 'airbnb',
+  extends: ['airbnb', 'prettier'],
   parser: 'babel-eslint',
   env: {
     browser: true,
@@ -9,12 +9,7 @@ module.exports = {
     amd: true,
     jest: true
   },
-  plugins: [
-    'react',
-    'jsx-a11y',
-    'flowtype',
-    'coursera'
-  ],
+  plugins: ['react', 'jsx-a11y', 'flowtype', 'coursera', 'prettier'],
   globals: {
     environment: true
   },
@@ -30,28 +25,25 @@ module.exports = {
   },
   rules: {
     'accessor-pairs': 2,
-    'arrow-body-style': [
-      0,
-      'as-needed'
-    ],
+    'arrow-body-style': [0, 'as-needed'],
     // TODO: Consider if we want to enable this rule.
     'arrow-parens': 0,
     'class-methods-use-this': 0,
     'comma-dangle': [
       0,
-      'always-multiline'
+      {
+        arrays: 'always-multiline',
+        objects: 'always-multiline',
+        imports: 'always-multiline',
+        exports: 'always-multiline',
+        functions: 'ignore'
+      }
     ],
     complexity: 0,
-    'computed-property-spacing': [
-      2,
-      'never'
-    ],
+    'computed-property-spacing': [2, 'never'],
     'consistent-return': 1,
     'coursera/no-translated-template-strings': 1,
-    curly: [
-      1,
-      'multi-line'
-    ],
+    curly: [1, 'multi-line'],
     'default-case': 1,
     'dot-notation': [
       1,
@@ -59,10 +51,7 @@ module.exports = {
         allowKeywords: true
       }
     ],
-    'dot-location': [
-      2,
-      'property'
-    ],
+    'dot-location': [2, 'property'],
     eqeqeq: 1,
     'flowtype/define-flow-type': 1,
     'func-names': 0,
@@ -89,25 +78,19 @@ module.exports = {
     'linebreak-style': 2,
     'max-len': [
       2,
-      120,
-      2
+      {
+        code: 120,
+        tabWidth: 2,
+        ignoreStrings: true
+      }
     ],
     'new-cap': [
       1,
       {
-        capIsNewExceptions: [
-          'Q',
-          'API',
-          'ZeroClipboard'
-        ]
+        capIsNewExceptions: ['Q', 'API', 'ZeroClipboard']
       }
     ],
-    'newline-per-chained-call': [
-      2,
-      {
-        ignoreChainWithDepth: 2
-      }
-    ],
+    'newline-per-chained-call': 0,
     'no-bitwise': 2,
     'no-continue': 2,
     'no-div-regex': 2,
@@ -138,11 +121,7 @@ module.exports = {
     'no-warning-comments': [
       1,
       {
-        terms: [
-          'fixme',
-          'hack',
-          'xxx'
-        ],
+        terms: ['fixme', 'hack', 'xxx'],
         location: 'start'
       }
     ],
@@ -153,19 +132,9 @@ module.exports = {
     'prefer-template': 0,
     strict: 0,
     'object-curly-spacing': 0,
-    'operator-linebreak': [
-      1,
-      'after'
-    ],
-    quotes: [
-      0,
-      'single',
-      'avoid-escape'
-    ],
-    'quote-props': [
-      1,
-      'consistent'
-    ],
+    'operator-linebreak': [1, 'after'],
+    quotes: [1, 'single', 'avoid-escape'],
+    'quote-props': [1, 'consistent'],
     'react/jsx-boolean-value': 0,
     'react/jsx-filename-extension': [
       1,
@@ -205,11 +174,7 @@ module.exports = {
           'render'
         ],
         groups: {
-          'static-methods': [
-            'propTypes',
-            'contextTypes',
-            'childContextTypes'
-          ],
+          'static-methods': ['propTypes', 'contextTypes', 'childContextTypes'],
           lifecycle: [
             'displayName',
             'propTypes',
@@ -242,10 +207,7 @@ module.exports = {
       }
     ],
     'sort-vars': 1,
-    'space-before-function-paren': [
-      2,
-      'never'
-    ],
-    'vars-on-top': 0,
+    'space-before-function-paren': [2, 'never'],
+    'vars-on-top': 0
   }
-}
+};

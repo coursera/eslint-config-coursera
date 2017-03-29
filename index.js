@@ -160,6 +160,8 @@ module.exports = {
         skipShapeProps: true
       }
     ],
+    // skipUndeclared is true because we use flow on some components
+    'react/prop-types': ['error', { ignore: [], customValidators: [], skipUndeclared: true }],
     'react/prefer-es6-class': 1,
     'react/prefer-stateless-function': 0,
     'react/require-extension': 0,

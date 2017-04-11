@@ -135,6 +135,12 @@ module.exports = {
     'operator-linebreak': [1, 'after'],
     quotes: [1, 'single', 'avoid-escape'],
     'quote-props': [1, 'consistent'],
+    'react/forbid-prop-types': [
+      1,
+      {
+        'forbid': ['any']
+      }
+    ],
     'react/jsx-boolean-value': 0,
     'react/jsx-filename-extension': [
       1,

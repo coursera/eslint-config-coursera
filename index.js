@@ -7,11 +7,11 @@ module.exports = {
     node: true,
     mocha: true,
     amd: true,
-    jest: true
+    jest: true,
   },
-  plugins: ['react', 'jsx-a11y', 'flowtype', 'coursera', 'prettier'],
+  plugins: ['react', 'jsx-a11y', 'flowtype', 'coursera', 'prettier', 'babel'],
   globals: {
-    environment: true
+    environment: true,
   },
   ecmaFeatures: {
     globalReturn: false,
@@ -21,7 +21,7 @@ module.exports = {
     restParams: true,
     unicodeCodePointEscapes: false,
     experimentalObjectRestSpread: true,
-    jsx: true
+    jsx: true,
   },
   rules: {
     'accessor-pairs': 2,
@@ -36,8 +36,8 @@ module.exports = {
         objects: 'always-multiline',
         imports: 'always-multiline',
         exports: 'always-multiline',
-        functions: 'ignore'
-      }
+        functions: 'ignore',
+      },
     ],
     complexity: 0,
     'computed-property-spacing': [2, 'never'],
@@ -48,8 +48,8 @@ module.exports = {
     'dot-notation': [
       1,
       {
-        allowKeywords: true
-      }
+        allowKeywords: true,
+      },
     ],
     'dot-location': [2, 'property'],
     eqeqeq: 1,
@@ -65,8 +65,8 @@ module.exports = {
       2,
       2,
       {
-        SwitchCase: 1
-      }
+        SwitchCase: 1,
+      },
     ],
     'jsx-a11y/aria-props': 1,
     'jsx-a11y/aria-proptypes': 1,
@@ -81,14 +81,14 @@ module.exports = {
       {
         code: 120,
         tabWidth: 2,
-        ignoreStrings: true
-      }
+        ignoreStrings: true,
+      },
     ],
     'new-cap': [
       1,
       {
-        capIsNewExceptions: ['Q', 'API', 'ZeroClipboard']
-      }
+        capIsNewExceptions: ['Q', 'API', 'ZeroClipboard'],
+      },
     ],
     'newline-per-chained-call': 0,
     'no-bitwise': 2,
@@ -113,8 +113,8 @@ module.exports = {
     'no-unused-vars': [
       1,
       {
-        args: 'none'
-      }
+        args: 'none',
+      },
     ],
     'no-void': 2,
     'no-var': 2,
@@ -122,8 +122,8 @@ module.exports = {
       1,
       {
         terms: ['fixme', 'hack', 'xxx'],
-        location: 'start'
-      }
+        location: 'start',
+      },
     ],
     'padded-blocks': 0,
     'prefer-arrow-callback': 0,
@@ -138,22 +138,22 @@ module.exports = {
     'react/forbid-prop-types': [
       1,
       {
-        'forbid': ['any']
-      }
+        forbid: ['any'],
+      },
     ],
     'react/jsx-boolean-value': 0,
     'react/jsx-filename-extension': [
       1,
       {
-        extensions: ['.jsx', '.js']
-      }
+        extensions: ['.jsx', '.js'],
+      },
     ],
     'react/jsx-no-duplicate-props': 2,
     'react/jsx-no-bind': [
       2,
       {
-        allowArrowFunctions: true
-      }
+        allowArrowFunctions: true,
+      },
     ],
     'react/jsx-quotes': 0,
     'react/no-did-mount-set-state': 0,
@@ -163,8 +163,8 @@ module.exports = {
       1,
       {
         customValidators: [],
-        skipShapeProps: true
-      }
+        skipShapeProps: true,
+      },
     ],
     // skipUndeclared is true because we use flow on some components
     'react/prop-types': ['error', { ignore: [], customValidators: [], skipUndeclared: true }],
@@ -174,13 +174,7 @@ module.exports = {
     'react/sort-comp': [
       1,
       {
-        order: [
-          'type-annotations',
-          'static-methods',
-          'lifecycle',
-          'everything-else',
-          'render'
-        ],
+        order: ['type-annotations', 'static-methods', 'lifecycle', 'everything-else', 'render'],
         groups: {
           'static-methods': ['propTypes', 'contextTypes', 'childContextTypes'],
           lifecycle: [
@@ -209,13 +203,14 @@ module.exports = {
             '/^get.+$/',
             'everything-else',
             '/^render.+$/',
-            'render'
-          ]
-        }
-      }
+            'render',
+          ],
+        },
+      },
     ],
     'sort-vars': 1,
     'space-before-function-paren': [2, 'never'],
-    'vars-on-top': 0
-  }
+    'vars-on-top': 0,
+    'babel/semi': 1,
+  },
 };

@@ -13,6 +13,7 @@ module.exports = {
   globals: {
     environment: true,
   },
+
   ecmaFeatures: {
     globalReturn: false,
     objectLiteralComputedProperties: false,
@@ -26,11 +27,17 @@ module.exports = {
   rules: {
     'accessor-pairs': 2,
     'arrow-body-style': [0, 'as-needed'],
-    // TODO: Consider if we want to enable this rule.
-    'arrow-parens': 0,
+    'arrow-parens': [
+      1,
+      'as-needed',
+      {
+        requireForBlockBody: true,
+      },
+    ],
+    'babel/semi': 1,
     'class-methods-use-this': 0,
     'comma-dangle': [
-      0,
+      1,
       {
         arrays: 'always-multiline',
         objects: 'always-multiline',
@@ -81,7 +88,11 @@ module.exports = {
       {
         code: 120,
         tabWidth: 2,
+        ignoreComments: true,
         ignoreStrings: true,
+        ignoreUrls: true,
+        ignoreTemplateLiterals: true,
+        ignoreRegExpLiterals: true,
       },
     ],
     'new-cap': [
@@ -92,6 +103,12 @@ module.exports = {
     ],
     'newline-per-chained-call': 0,
     'no-bitwise': 2,
+    'no-confusing-arrow': [
+      1,
+      {
+        allowParens: true,
+      },
+    ],
     'no-continue': 2,
     'no-div-regex': 2,
     'no-else-return': 0,
@@ -131,7 +148,7 @@ module.exports = {
     'prefer-default-export': 0,
     'prefer-template': 0,
     strict: 0,
-    'object-curly-spacing': 0,
+    'object-curly-spacing': [1, 'always'],
     'operator-linebreak': [1, 'after'],
     quotes: [1, 'single', 'avoid-escape'],
     'quote-props': [1, 'consistent'],
@@ -167,14 +184,23 @@ module.exports = {
       },
     ],
     // skipUndeclared is true because we use flow on some components
-    'react/prop-types': ['error', { ignore: [], customValidators: [], skipUndeclared: true }],
+    'react/prop-types': [
+      2,
+      {ignore: [], customValidators: [], skipUndeclared: true},
+    ],
     'react/prefer-es6-class': 1,
     'react/prefer-stateless-function': 0,
     'react/require-extension': 0,
     'react/sort-comp': [
       1,
       {
-        order: ['type-annotations', 'static-methods', 'lifecycle', 'everything-else', 'render'],
+        order: [
+          'type-annotations',
+          'static-methods',
+          'lifecycle',
+          'everything-else',
+          'render',
+        ],
         groups: {
           'static-methods': ['propTypes', 'contextTypes', 'childContextTypes'],
           lifecycle: [
@@ -211,6 +237,5 @@ module.exports = {
     'sort-vars': 1,
     'space-before-function-paren': [2, 'never'],
     'vars-on-top': 0,
-    'babel/semi': 1,
   },
 };

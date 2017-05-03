@@ -92,7 +92,6 @@ module.exports = {
         ignoreStrings: true,
         ignoreUrls: true,
         ignoreTemplateLiterals: true,
-        ignoreRegExpLiterals: true,
       },
     ],
     'new-cap': [

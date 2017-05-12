@@ -165,12 +165,7 @@ module.exports = {
       },
     ],
     'react/jsx-no-duplicate-props': 2,
-    'react/jsx-no-bind': [
-      2,
-      {
-        allowArrowFunctions: true,
-      },
-    ],
+    'react/jsx-no-bind': 2,
     'react/jsx-quotes': 0,
     'react/no-did-mount-set-state': 0,
     'react/no-did-update-set-state': 0,

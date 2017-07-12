@@ -101,6 +101,9 @@ module.exports = {
       },
     ],
     'newline-per-chained-call': 0,
+    // use import/no-duplicates instead
+    // https://github.com/babel/eslint-plugin-babel/issues/59
+    'no-duplicate-imports': 0,
     'no-bitwise': 2,
     'no-confusing-arrow': [
       1,
@@ -110,6 +113,7 @@ module.exports = {
     ],
     'no-continue': 2,
     'no-div-regex': 2,
+    'no-duplicates': 2,
     'no-else-return': 0,
     'no-iterator': 2,
     'no-labels': 2,

@@ -68,6 +68,7 @@ module.exports = {
     // TODO: Consider enabling these import rules
     'import/no-unresolved': 0,
     'import/no-extraneous-dependencies': 0,
+    'import/no-duplicates': 2,
     indent: [
       2,
       2,
@@ -113,7 +114,6 @@ module.exports = {
     ],
     'no-continue': 2,
     'no-div-regex': 2,
-    'no-duplicates': 2,
     'no-else-return': 0,
     'no-iterator': 2,
     'no-labels': 2,

@@ -35,7 +35,7 @@
     "eslint-import-resolver-node": "^0.2.3",
     "eslint-plugin-babel": "^4.1.1",
     "eslint-plugin-coursera": "0.0.3",
-    "eslint-plugin-flowtype": "^2.25.0",
+    "eslint-plugin-flowtype": "^2.35.0",
     "eslint-plugin-graphql": "^0.7.0",
     "eslint-plugin-import": "^1.15.0",
     "eslint-plugin-jsx-a11y": "^2.2.2",

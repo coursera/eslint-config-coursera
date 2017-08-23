@@ -1,6 +1,6 @@
 module.exports = {
   root: true,
-  extends: ['airbnb', 'prettier'],
+  extends: ['airbnb', 'plugin:flowtype/recommended', 'prettier'],
   parser: 'babel-eslint',
   env: {
     browser: true,
@@ -10,6 +10,11 @@ module.exports = {
     jest: true,
   },
   plugins: ['react', 'jsx-a11y', 'flowtype', 'coursera', 'prettier', 'babel'],
+  settings: {
+    "flowtype": {
+      "onlyFilesWithFlowAnnotation": true
+    }
+  },
   globals: {
     environment: true,
   },

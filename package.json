@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-coursera",
-  "version": "0.4.5",
+  "version": "0.4.6",
   "description": "Coursera's approach to JavaScript",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -30,17 +30,17 @@
   "homepage": "https://github.com/coursera/eslint-plugin-coursera",
   "dependencies": {
     "babel-eslint": "^6.0.2",
-    "eslint-config-airbnb": "^11.2.0",
+    "eslint-config-airbnb": "^16.1.0",
     "eslint-config-prettier": "^1.5.0",
     "eslint-import-resolver-node": "^0.2.3",
     "eslint-plugin-babel": "^4.1.1",
     "eslint-plugin-coursera": "0.0.3",
     "eslint-plugin-flowtype": "^2.35.0",
     "eslint-plugin-graphql": "^0.7.0",
-    "eslint-plugin-import": "^1.15.0",
-    "eslint-plugin-jsx-a11y": "^2.2.2",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
     "eslint-plugin-prettier": "^2.0.1",
-    "eslint-plugin-react": "^6.2.1",
+    "eslint-plugin-react": "^7.4.0",
     "prettier": "^0.22.0"
   },
   "peerDependencies": {

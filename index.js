@@ -18,16 +18,12 @@ module.exports = {
   globals: {
     environment: true,
   },
-
-  ecmaFeatures: {
-    globalReturn: false,
-    objectLiteralComputedProperties: false,
-    regexUFlag: true,
-    regexYFlag: true,
-    restParams: true,
-    unicodeCodePointEscapes: false,
-    experimentalObjectRestSpread: true,
-    jsx: true,
+  parserOptions: {
+    ecmaVersion: 8,
+    ecmaFeatures: {
+      experimentalObjectRestSpread: true,
+      jsx: true,
+    },
   },
   rules: {
     'accessor-pairs': 2,
@@ -67,6 +63,7 @@ module.exports = {
     eqeqeq: 1,
     'flowtype/define-flow-type': 1,
     'func-names': 0,
+    'function-paren-newline': [2, 'consistent'],
     'global-require': 0,
     'guard-for-in': 1,
     'id-length': 0,
@@ -74,6 +71,7 @@ module.exports = {
     'import/no-unresolved': 0,
     'import/no-extraneous-dependencies': 0,
     'import/no-duplicates': 2,
+    'import/no-webpack-loader-syntax': 0,
     indent: [
       2,
       2,
@@ -193,6 +191,7 @@ module.exports = {
     ],
     'react/prefer-es6-class': 1,
     'react/prefer-stateless-function': 0,
+    'react/require-default-props': 0,
     'react/require-extension': 0,
     'react/sort-comp': [
       1,

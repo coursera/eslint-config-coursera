@@ -89,7 +89,11 @@ module.exports = {
     'jsx-a11y/aria-props': 1,
     'jsx-a11y/aria-proptypes': 1,
     'jsx-a11y/aria-role': 1,
-    'jsx-a11y/label-has-for': 1,
+    'jsx-a11y/label-has-for': [ 1, {
+      'required': {
+        'some': [ 'nesting', 'id' ],
+      },
+    }],
     'jsx-a11y/role-has-required-aria-props': 1,
     'jsx-a11y/role-supports-aria-props': 1,
     'jsx-a11y/tabindex-no-positive': 1,

@@ -169,6 +169,7 @@ module.exports = {
     'operator-linebreak': [1, 'after'],
     quotes: [1, 'single', 'avoid-escape'],
     'quote-props': [1, 'consistent'],
+    'react/default-props-match-prop-types' : 0,
     'react/forbid-prop-types': [
       1,
       {

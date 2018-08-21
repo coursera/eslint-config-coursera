@@ -21,35 +21,36 @@
   ],
   "author": "jon wong <j@jnwng.com> (https://twitter.com/jnwng)",
   "contributors": [
-    "Lewis Chung <lewis@coursera.org> (https://twitter.com/_lewisf)"
+    "Lewis Chung <lewis@coursera.org> (https://twitter.com/_lewisf)",
+    "Gago Frigerio <gago@coursera.org> (https://twitter.com/gagoar)"
   ],
-  "license": "Apache 2.0",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/coursera/eslint-plugin-coursera/issues"
   },
   "homepage": "https://github.com/coursera/eslint-plugin-coursera",
   "dependencies": {
     "babel-eslint": "^8.2.2",
-    "eslint-config-airbnb": "^16.1.0",
-    "eslint-config-prettier": "^1.5.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^3.0.1",
     "eslint-import-resolver-node": "^0.2.3",
     "eslint-plugin-babel": "^4.1.1",
-    "eslint-plugin-coursera": "0.0.3",
+    "eslint-plugin-coursera": "0.0.5",
     "eslint-plugin-flowtype": "^2.35.0",
-    "eslint-plugin-graphql": "^0.7.0",
-    "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-graphql": "^2.1.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-prettier": "^2.0.1",
-    "eslint-plugin-react": "^7.4.0",
-    "prettier": "^1.8.2"
+    "eslint-plugin-react": "^7.11.0",
+    "prettier": "^1.14.0"
   },
   "resolutions": {
     "jsx-ast-utils": "https://github.com/jnwng/jsx-ast-utils#jw/fix-spread-property"
   },
   "peerDependencies": {
-    "eslint": "^4.11.0"
+    "eslint": "^4.19.1"
   },
   "devDependencies": {
-    "eslint": "^4.11.0"
+    "eslint": "^4.19.1"
   }
 }

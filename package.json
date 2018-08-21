@@ -32,7 +32,7 @@
   "dependencies": {
     "babel-eslint": "^8.2.2",
     "eslint-config-airbnb": "^17.1.0",
-    "eslint-config-prettier": "^1.5.0",
+    "eslint-config-prettier": "^3.0.1",
     "eslint-import-resolver-node": "^0.2.3",
     "eslint-plugin-babel": "^4.1.1",
     "eslint-plugin-coursera": "0.0.3",
@@ -45,8 +45,7 @@
     "prettier": "^1.14.0"
   },
   "resolutions": {
-    "jsx-ast-utils":
-      "https://github.com/jnwng/jsx-ast-utils#jw/fix-spread-property"
+    "jsx-ast-utils": "https://github.com/jnwng/jsx-ast-utils#jw/fix-spread-property"
   },
   "peerDependencies": {
     "eslint": "^4.19.1"

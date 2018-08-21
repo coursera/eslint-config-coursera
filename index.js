@@ -49,7 +49,6 @@ module.exports = {
     eqeqeq: 1,
     "flowtype/define-flow-type": 1,
     "func-names": 0,
-    "function-paren-newline": [2, "consistent"],
     "global-require": 0,
     "guard-for-in": 1,
     "id-length": 0,

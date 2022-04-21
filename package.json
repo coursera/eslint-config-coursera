@@ -30,6 +30,7 @@
   },
   "homepage": "https://github.com/coursera/eslint-plugin-coursera",
   "dependencies": {
+    "@babel/eslint-parser": "^7.17.0",
     "@babel/eslint-plugin": "^7.17.7",
     "babel-eslint": "^10.1.0",
     "eslint-config-airbnb": "^17.1.0",
@@ -48,9 +49,9 @@
     "jsx-ast-utils": "https://github.com/jnwng/jsx-ast-utils#jw/fix-spread-property"
   },
   "peerDependencies": {
-    "eslint": "^4.19.1"
+    "eslint": "^7.5"
   },
   "devDependencies": {
-    "eslint": "^4.19.1"
+    "eslint": "^7.5"
   }
 }

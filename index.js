@@ -15,7 +15,7 @@ module.exports = {
     amd: true,
     jest: true
   },
-  plugins: ["react", "jsx-a11y", "flowtype", "coursera", "prettier", "babel"],
+  plugins: ["react", "jsx-a11y", "flowtype", "coursera", "prettier", "@babel"],
   settings: {
     flowtype: {
       onlyFilesWithFlowAnnotation: true

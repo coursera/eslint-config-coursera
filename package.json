@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-coursera",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "description": "Coursera's approach to JavaScript",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -30,11 +30,12 @@
   },
   "homepage": "https://github.com/coursera/eslint-plugin-coursera",
   "dependencies": {
-    "babel-eslint": "^8.2.2",
+    "@babel/eslint-parser": "^7.17.0",
+    "@babel/eslint-plugin": "^7.17.7",
+    "babel-eslint": "^10.1.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^3.0.1",
     "eslint-import-resolver-node": "^0.2.3",
-    "eslint-plugin-babel": "^4.1.1",
     "eslint-plugin-coursera": "0.0.6",
     "eslint-plugin-flowtype": "^2.35.0",
     "eslint-plugin-graphql": "^2.1.1",
@@ -48,9 +49,9 @@
     "jsx-ast-utils": "https://github.com/jnwng/jsx-ast-utils#jw/fix-spread-property"
   },
   "peerDependencies": {
-    "eslint": "^4.19.1"
+    "eslint": "^7.5"
   },
   "devDependencies": {
-    "eslint": "^4.19.1"
+    "eslint": "^7.5"
   }
 }

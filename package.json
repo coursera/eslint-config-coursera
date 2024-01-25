@@ -1,6 +1,6 @@
 {
-  "name": "eslint-config-coursera",
-  "version": "0.9.1",
+  "name": "@coursera/eslint-config-coursera",
+  "version": "0.9.2",
   "description": "Coursera's approach to JavaScript",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -50,5 +50,8 @@
   },
   "devDependencies": {
     "eslint": "^7.5"
+  },
+    "publishConfig": {
+      "registry": "https://coursera.jfrog.io/artifactory/api/npm/coursera-npm-packages/"
   }
 }

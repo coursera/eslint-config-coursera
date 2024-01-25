@@ -29,7 +29,6 @@
   "dependencies": {
     "@babel/eslint-parser": "^7.17.0",
     "@babel/eslint-plugin": "^7.17.7",
-    "babel-eslint": "^10.1.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^3.0.1",
     "eslint-import-resolver-node": "^0.2.3",

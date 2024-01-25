@@ -20,10 +20,7 @@
     "jsx"
   ],
   "author": "jon wong <j@jnwng.com> (https://twitter.com/jnwng)",
-  "contributors": [
-    "Lewis Chung <lewis@coursera.org> (https://twitter.com/_lewisf)",
-    "Gago Frigerio <gago@coursera.org> (https://twitter.com/gagoar)"
-  ],
+  "contributors": ["<@webedx-spark/infrastructure-developerexperience>"],
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/coursera/eslint-plugin-coursera/issues"
